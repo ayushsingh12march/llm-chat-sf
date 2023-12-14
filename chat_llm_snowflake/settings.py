@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-@es76rq_o@$j8@wahvifuq%j8l9sk-r1&c+9k3k!!en$f)*x@r
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "rest_framework",
+    "chat_llm_snowflake",
+
 ]
 
 MIDDLEWARE = [
